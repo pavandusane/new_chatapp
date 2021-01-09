@@ -3,7 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/new_chatapp
-  - source: /gunicorn.service
+  - source: /gunicorn.services
     destination: /etc/systemd/system/
   - source: /fundoo.conf
     destination: /etc/nginx/sites-available/

@@ -102,16 +102,12 @@ CHANNEL_LAYERS = {
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'chatapp',
-        'USER': 'chatapp',
-        'PASSWORD': 'admin1234',
-        'HOST': 'chatapp.cbva1mkpy8pg.us-west-1.rds.amazonaws.com',
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-            'charset': 'utf8mb4',
-          }
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'chatappdb',
+        'USER': 'chatappdb',
+        'PASSWORD': 'admin12345',
+        'HOST': 'chatappdb.cbva1mkpy8pg.us-west-1.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
 #sagar kadam

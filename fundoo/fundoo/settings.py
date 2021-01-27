@@ -99,7 +99,7 @@ CHANNEL_LAYERS = {
 
 
 # Database
-SECRET_KEY = os.environ['SECRET_KEY']
+#SECRET_KEY = os.environ['SECRET_KEY']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',

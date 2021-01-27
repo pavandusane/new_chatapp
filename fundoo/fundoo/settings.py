@@ -102,14 +102,15 @@ CHANNEL_LAYERS = {
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'chatappdb',
-        'USER': 'chatappdb',
-        'PASSWORD': 'admin12345',
-        'HOST': 'chatappdb.cbva1mkpy8pg.us-west-1.rds.amazonaws.com',
-        'PORT': '5432',
+        'USER': 'root',
+        'PASSWORD': 'admin123',
+        'HOST': 'database-1.cbva1mkpy8pg.us-west-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
+
 #sagar kadam
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

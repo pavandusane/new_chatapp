@@ -98,28 +98,27 @@ CHANNEL_LAYERS = {
 }
 
 
-# Database
-#SECRET_KEY = os.environ['SECRET_KEY']
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': os.environ['DATABASE_NAME'],
-#        'USER': os.environ['DATABASE_USER'],
-#        'HOST': os.environ['DATABASE_HOST'],
-#        'PORT': int(os.environ['DATABASE_PORT']),
-#        'PORT':3306,
-#    }
-#}
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'chatappdb',
-        'USER': 'root',
-        'PASSWORD': 'admin123',
-        'HOST': 'database-1.cbva1mkpy8pg.us-west-1.rds.amazonaws.com',
-        'PORT': '3306',
+        'NAME': env("DATABASE_NAME"),
+        'USER': env("DATABASE_USER"),
+        'PASSWORD': env("DATABASE_PASSWORD"),
+        'HOST': env("DATABASE_HOST"),
+        'PORT': env("DATABASE_PORT"),
     }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'chatappdb',
+#        'USER': 'root',
+#        'PASSWORD': 'admin123',
+#        'HOST': 'database-1.cbva1mkpy8pg.us-west-1.rds.amazonaws.com',
+#        'PORT': '3306',
+#    }
+#}
 
 #sagar kadam
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
